@@ -46,10 +46,3 @@ public class SubSection
 internal partial class SectionJsonSerializerContext : JsonSerializerContext
 {
 }
-
-[JsonSourceGenerationOptions(
-    GenerationMode = JsonSourceGenerationMode.Default, WriteIndented = true)] // https://github.com/dotnet/runtime/issues/78602#issuecomment-1322004254
-[JsonSerializable(typeof(SubSection))]
-internal partial class SubSectionJsonSerializerContext : JsonSerializerContext
-{
-}
