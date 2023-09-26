@@ -8,7 +8,7 @@ var config = new ConfigurationBuilder()
 
 config.GetSection("Section1").Bind(MyConfiguration.Section1);
 
-Console.WriteLine($"Value11: {MyConfiguration.Section1.Value1}");
+Console.WriteLine($"Value1: {MyConfiguration.Section1.Value1}");
 Console.WriteLine($"SubSection1: [{MyConfiguration.Section1.SubSection1.A}, {MyConfiguration.Section1.SubSection1.B}]");
 Console.WriteLine($"SubSection2: [{MyConfiguration.Section1.SubSection2?.A.ToString() ?? "null"}, {MyConfiguration.Section1.SubSection2?.B.ToString() ?? "null"}]");
 
